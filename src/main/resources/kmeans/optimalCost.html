@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <div id='plot'></div>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "mark" : "line",
+  "encoding" : {
+    "x" : {
+      "field" : "clusters",
+      "type" : "nominal"
+    },
+    "y" : {
+      "field" : "cost",
+      "type" : "quantitative"
+    }
+  },
+  "description" : "Kmeans Cost",
+  "data" : {
+    "values" : [
+      {
+        
+      },
+      {
+        "clusters" : 1
+      },
+      {
+        "cost" : 2.1101567306056461E9,
+        "clusters" : 2
+      },
+      {
+        "cost" : 1.3257479968945053E9,
+        "clusters" : 3
+      },
+      {
+        "cost" : 9.781429962155588E8,
+        "clusters" : 4
+      },
+      {
+        "cost" : 7.665871836219599E8,
+        "clusters" : 5
+      },
+      {
+        "cost" : 5.297715683290578E8,
+        "clusters" : 6
+      },
+      {
+        "cost" : 5.082836610487819E8,
+        "clusters" : 7
+      },
+      {
+        "cost" : 3.767467670370029E8,
+        "clusters" : 8
+      },
+      {
+        "cost" : 3.370768198044817E8,
+        "clusters" : 9
+      },
+      {
+        "cost" : 3.5478612794100547E8,
+        "clusters" : 10
+      },
+      {
+        "cost" : 2.656829673446426E8,
+        "clusters" : 11
+      },
+      {
+        "cost" : 2.4609396888083076E8,
+        "clusters" : 12
+      },
+      {
+        "cost" : 2.2736128329414645E8,
+        "clusters" : 13
+      },
+      {
+        "cost" : 2.2668621265496922E8,
+        "clusters" : 14
+      },
+      {
+        "cost" : 1.9873592836241263E8,
+        "clusters" : 15
+      },
+      {
+        "cost" : 1.855360265813848E8,
+        "clusters" : 16
+      },
+      {
+        "cost" : 1.7220089685694543E8,
+        "clusters" : 17
+      },
+      {
+        "cost" : 1.6374746506777737E8,
+        "clusters" : 18
+      },
+      {
+        "cost" : 1.5316127401558682E8,
+        "clusters" : 19
+      },
+      {
+        "cost" : 1.5047046176890984E8,
+        "clusters" : 20
+      }
+    ]
+  }
+}
+   }
+   vg.embed("#plot", embedSpec, function(error, result) {});
+ </script>
+
+    </body>
+</html>
