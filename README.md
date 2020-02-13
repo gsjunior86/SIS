@@ -1,4 +1,4 @@
-# SIS
+# Spark Image Segmentation
 K-Means Image Segmentation on Apache Spark
 
 **br.gsj.spark.kmeans.ImageSegmentation** - Run the segmentation of an image. The image is loaded by the variable path and the
