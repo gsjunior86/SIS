@@ -4,8 +4,11 @@
 	<groupId>br.gsj.spark</groupId>
 	<artifactId>Sis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	
 
 	<build>
+	<sourceDirectory>src/main/scala</sourceDirectory>
 		<plugins>
 			<!-- This plugin compiles Scala files -->
 			<plugin>

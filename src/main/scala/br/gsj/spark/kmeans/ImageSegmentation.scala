@@ -19,7 +19,6 @@ import java.io.FileInputStream
 import com.sksamuel.scrimage.Image
 import com.sksamuel.scrimage.filter.EdgeFilter
 import com.sksamuel.scrimage.nio.JpegWriter
-import br.gsj.utils.MLUtils
 import org.apache.spark.sql.DataFrame
 
 object ImageSegmentation {
