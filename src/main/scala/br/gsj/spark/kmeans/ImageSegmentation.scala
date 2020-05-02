@@ -43,7 +43,7 @@ object ImageSegmentation {
 
     val va_transformed_df = vector_assembler.transform(final_image_df)
 
-    val k = 3
+    val k = 5
     val kmeans = new KMeans().setK(k).setSeed(1L).setFeaturesCol("features")
     val kmeans_model = kmeans.fit(va_transformed_df)
 
