@@ -25,7 +25,7 @@ object ImageSegmentation {
 
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder().appName("imgSeg").master("local[*]").getOrCreate()
-    val image_path = "src/main/resources/m1_blur.jpg"
+    val image_path = "src/main/resources/m1.jpg"
     val result_path = image_path.substring(0, image_path.lastIndexOf("/") + 1) +
       image_path.substring(image_path.lastIndexOf("/") + 1, image_path.lastIndexOf(".")) +
       "_result" + image_path.substring(image_path.lastIndexOf("."), image_path.size)
@@ -43,7 +43,7 @@ object ImageSegmentation {
 
     val va_transformed_df = vector_assembler.transform(final_image_df)
 
-    val k = 15
+    val k = 3
     val kmeans = new KMeans().setK(k).setSeed(1L).setFeaturesCol("features")
     val kmeans_model = kmeans.fit(va_transformed_df)
 
